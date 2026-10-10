@@ -1,0 +1,150 @@
+<mujoco model="ssl_division_b">
+  <!-- Exported from src/mujoco_ssl/scene.py; edit that file instead. -->
+  <compiler angle="radian" autolimits="true" />
+  <option timestep="0.002" integrator="implicitfast" />
+  <statistic extent="6.38" center="0 0 0" />
+  <visual>
+    <global offwidth="1920" offheight="1080" />
+    <quality shadowsize="4096" offsamples="8" />
+    <headlight ambient="0.32 0.32 0.32" diffuse="0.42 0.42 0.42" specular="0 0 0" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.3 0.33 0.37" rgb2="0.1 0.11 0.12" width="256" height="256" />
+    <material name="carpet" rgba="0.17 0.47 0.23 1" specular="0" shininess="0" />
+    <material name="surround" rgba="0.16 0.17 0.18 1" specular="0" />
+    <material name="line" rgba="0.96 0.96 0.96 1" emission="0.25" specular="0" />
+    <material name="wall" rgba="0.07 0.07 0.08 1" />
+    <material name="goal_inner" rgba="0.93 0.93 0.93 1" />
+    <material name="ball" rgba="1 0.45 0.05 1" specular="0.4" shininess="0.6" emission="0.15" />
+    <material name="robot_shell" rgba="0.09 0.09 0.1 1" specular="0.25" />
+    <material name="robot_front" rgba="0.78 0.79 0.8 1" />
+    <material name="team_blue" rgba="0.12 0.4 1 1" emission="0.2" />
+    <material name="marker_pink" rgba="1 0.3 0.7 1" emission="0.2" />
+    <material name="marker_green" rgba="0.25 0.9 0.35 1" emission="0.2" />
+    <mesh name="robot_shell" vertex="0.075 0.0497494 -0.075 0.069287 0.0574396 -0.075 0.0627889 0.0644791 -0.075 0.0555794 0.0707879 -0.075 0.0477401 0.0762947 -0.075 0.0393599 0.080937 -0.075 0.0305337 0.0846622 -0.075 0.0213616 0.0874282 -0.075 0.0119474 0.0892035 -0.075 0.00239782 0.0899681 -0.075 -0.00717891 0.0897132 -0.075 -0.0166743 0.0884419 -0.075 -0.0259808 0.0861684 -0.075 -0.0349928 0.0829186 -0.075 -0.0436084 0.0787293 -0.075 -0.0517299 0.0736479 -0.075 -0.0592652 0.0677321 -0.075 -0.066129 0.0610487 -0.075 -0.0722436 0.0536737 -0.075 -0.0775395 0.0456905 -0.075 -0.0819569 0.0371896 -0.075 -0.0854457 0.0282673 -0.075 -0.0879662 0.0190247 -0.075 -0.0894901 0.00956654 -0.075 -0.09 1.10218e-17 -0.075 -0.0894901 -0.00956654 -0.075 -0.0879662 -0.0190247 -0.075 -0.0854457 -0.0282673 -0.075 -0.0819569 -0.0371896 -0.075 -0.0775395 -0.0456905 -0.075 -0.0722436 -0.0536737 -0.075 -0.066129 -0.0610487 -0.075 -0.0592652 -0.0677321 -0.075 -0.0517299 -0.0736479 -0.075 -0.0436084 -0.0787293 -0.075 -0.0349928 -0.0829186 -0.075 -0.0259808 -0.0861684 -0.075 -0.0166743 -0.0884419 -0.075 -0.00717891 -0.0897132 -0.075 0.00239782 -0.0899681 -0.075 0.0119474 -0.0892035 -0.075 0.0213616 -0.0874282 -0.075 0.0305337 -0.0846622 -0.075 0.0393599 -0.080937 -0.075 0.0477401 -0.0762947 -0.075 0.0555794 -0.0707879 -0.075 0.0627889 -0.0644791 -0.075 0.069287 -0.0574396 -0.075 0.075 -0.0497494 -0.075 0.075 0.0497494 0.075 0.069287 0.0574396 0.075 0.0627889 0.0644791 0.075 0.0555794 0.0707879 0.075 0.0477401 0.0762947 0.075 0.0393599 0.080937 0.075 0.0305337 0.0846622 0.075 0.0213616 0.0874282 0.075 0.0119474 0.0892035 0.075 0.00239782 0.0899681 0.075 -0.00717891 0.0897132 0.075 -0.0166743 0.0884419 0.075 -0.0259808 0.0861684 0.075 -0.0349928 0.0829186 0.075 -0.0436084 0.0787293 0.075 -0.0517299 0.0736479 0.075 -0.0592652 0.0677321 0.075 -0.066129 0.0610487 0.075 -0.0722436 0.0536737 0.075 -0.0775395 0.0456905 0.075 -0.0819569 0.0371896 0.075 -0.0854457 0.0282673 0.075 -0.0879662 0.0190247 0.075 -0.0894901 0.00956654 0.075 -0.09 1.10218e-17 0.075 -0.0894901 -0.00956654 0.075 -0.0879662 -0.0190247 0.075 -0.0854457 -0.0282673 0.075 -0.0819569 -0.0371896 0.075 -0.0775395 -0.0456905 0.075 -0.0722436 -0.0536737 0.075 -0.066129 -0.0610487 0.075 -0.0592652 -0.0677321 0.075 -0.0517299 -0.0736479 0.075 -0.0436084 -0.0787293 0.075 -0.0349928 -0.0829186 0.075 -0.0259808 -0.0861684 0.075 -0.0166743 -0.0884419 0.075 -0.00717891 -0.0897132 0.075 0.00239782 -0.0899681 0.075 0.0119474 -0.0892035 0.075 0.0213616 -0.0874282 0.075 0.0305337 -0.0846622 0.075 0.0393599 -0.080937 0.075 0.0477401 -0.0762947 0.075 0.0555794 -0.0707879 0.075 0.0627889 -0.0644791 0.075 0.069287 -0.0574396 0.075 0.075 -0.0497494 0.075" />
+  </asset>
+  <worldbody>
+    <light name="sun" directional="true" pos="0 0 8" dir="0.25 0.35 -1" diffuse="0.55 0.55 0.55" specular="0.1 0.1 0.1" castshadow="true" />
+    <camera name="top" pos="0 0 10" xyaxes="1 0 0 0 1 0" fovy="41.61" />
+    <camera name="broadcast" pos="0 -8.2 6.4" xyaxes="1 0 0 0 0.634317 0.773073" fovy="45" />
+    <geom name="floor" type="plane" size="5.2 3.7 0.1" material="carpet" contype="1" conaffinity="1" />
+    <geom name="surround" type="plane" pos="0 0 -0.002" size="15.6 11.1 0.1" material="surround" contype="0" conaffinity="0" />
+    <geom name="touch_line_top" type="box" pos="0 3 0.0005" size="4.505 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="touch_line_bottom" type="box" pos="0 -3 0.0005" size="4.505 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="goal_line_left" type="box" pos="-4.5 0 0.0005" size="0.005 3.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="goal_line_right" type="box" pos="4.5 0 0.0005" size="0.005 3.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="halfway_line" type="box" pos="0 0 0.0005" size="0.005 3 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="goal_to_goal_line" type="box" pos="0 0 0.0005" size="4.5 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_00" type="box" pos="0.5 0 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 1.5708" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_01" type="box" pos="0.497592 0.0490086 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 1.66897" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_02" type="box" pos="0.490393 0.0975452 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 1.76715" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_03" type="box" pos="0.47847 0.145142 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 1.86532" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_04" type="box" pos="0.46194 0.191342 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 1.9635" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_05" type="box" pos="0.440961 0.235698 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.06167" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_06" type="box" pos="0.415735 0.277785 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.15984" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_07" type="box" pos="0.386505 0.317197 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.25802" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_08" type="box" pos="0.353553 0.353553 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.35619" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_09" type="box" pos="0.317197 0.386505 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.45437" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_10" type="box" pos="0.277785 0.415735 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.55254" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_11" type="box" pos="0.235698 0.440961 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.65072" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_12" type="box" pos="0.191342 0.46194 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.74889" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_13" type="box" pos="0.145142 0.47847 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.84707" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_14" type="box" pos="0.0975452 0.490393 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 2.94524" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_15" type="box" pos="0.0490086 0.497592 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.04342" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_16" type="box" pos="3.06162e-17 0.5 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.14159" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_17" type="box" pos="-0.0490086 0.497592 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.23977" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_18" type="box" pos="-0.0975452 0.490393 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.33794" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_19" type="box" pos="-0.145142 0.47847 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.43612" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_20" type="box" pos="-0.191342 0.46194 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.53429" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_21" type="box" pos="-0.235698 0.440961 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.63247" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_22" type="box" pos="-0.277785 0.415735 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.73064" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_23" type="box" pos="-0.317197 0.386505 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.82882" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_24" type="box" pos="-0.353553 0.353553 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 3.92699" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_25" type="box" pos="-0.386505 0.317197 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.02517" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_26" type="box" pos="-0.415735 0.277785 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.12334" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_27" type="box" pos="-0.440961 0.235698 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.22152" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_28" type="box" pos="-0.46194 0.191342 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.31969" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_29" type="box" pos="-0.47847 0.145142 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.41786" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_30" type="box" pos="-0.490393 0.0975452 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.51604" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_31" type="box" pos="-0.497592 0.0490086 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.61421" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_32" type="box" pos="-0.5 6.12323e-17 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.71239" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_33" type="box" pos="-0.497592 -0.0490086 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.81056" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_34" type="box" pos="-0.490393 -0.0975452 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 4.90874" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_35" type="box" pos="-0.47847 -0.145142 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.00691" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_36" type="box" pos="-0.46194 -0.191342 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.10509" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_37" type="box" pos="-0.440961 -0.235698 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.20326" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_38" type="box" pos="-0.415735 -0.277785 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.30144" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_39" type="box" pos="-0.386505 -0.317197 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.39961" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_40" type="box" pos="-0.353553 -0.353553 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.49779" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_41" type="box" pos="-0.317197 -0.386505 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.59596" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_42" type="box" pos="-0.277785 -0.415735 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.69414" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_43" type="box" pos="-0.235698 -0.440961 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.79231" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_44" type="box" pos="-0.191342 -0.46194 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.89049" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_45" type="box" pos="-0.145142 -0.47847 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 5.98866" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_46" type="box" pos="-0.0975452 -0.490393 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.08684" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_47" type="box" pos="-0.0490086 -0.497592 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.18501" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_48" type="box" pos="-9.18485e-17 -0.5 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.28319" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_49" type="box" pos="0.0490086 -0.497592 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.38136" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_50" type="box" pos="0.0975452 -0.490393 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.47953" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_51" type="box" pos="0.145142 -0.47847 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.57771" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_52" type="box" pos="0.191342 -0.46194 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.67588" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_53" type="box" pos="0.235698 -0.440961 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.77406" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_54" type="box" pos="0.277785 -0.415735 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.87223" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_55" type="box" pos="0.317197 -0.386505 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 6.97041" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_56" type="box" pos="0.353553 -0.353553 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.06858" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_57" type="box" pos="0.386505 -0.317197 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.16676" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_58" type="box" pos="0.415735 -0.277785 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.26493" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_59" type="box" pos="0.440961 -0.235698 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.36311" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_60" type="box" pos="0.46194 -0.191342 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.46128" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_61" type="box" pos="0.47847 -0.145142 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.55946" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_62" type="box" pos="0.490393 -0.0975452 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.65763" material="line" contype="0" conaffinity="0" />
+    <geom name="centre_circle_63" type="box" pos="0.497592 -0.0490086 0.0005" size="0.0245634 0.005 0.0005" euler="0 0 7.75581" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_left_front" type="box" pos="-3.5 0 0.0005" size="0.005 1.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_left_top" type="box" pos="-4 1 0.0005" size="0.5 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_left_bottom" type="box" pos="-4 -1 0.0005" size="0.5 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_right_front" type="box" pos="3.5 0 0.0005" size="0.005 1.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_right_top" type="box" pos="4 1 0.0005" size="0.5 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="defense_right_bottom" type="box" pos="4 -1 0.0005" size="0.5 0.005 0.0005" material="line" contype="0" conaffinity="0" />
+    <geom name="wall_top" type="box" pos="0 3.325 0.05" size="4.85 0.025 0.05" material="wall" contype="1" conaffinity="3" />
+    <geom name="wall_bottom" type="box" pos="0 -3.325 0.05" size="4.85 0.025 0.05" material="wall" contype="1" conaffinity="3" />
+    <geom name="wall_left" type="box" pos="-4.825 0 0.05" size="0.025 3.3 0.05" material="wall" contype="1" conaffinity="3" />
+    <geom name="wall_right" type="box" pos="4.825 0 0.05" size="0.025 3.3 0.05" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_left_side_top" type="box" pos="-4.605 0.51 0.08" size="0.1 0.01 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_left_side_top_inner" type="box" pos="-4.595 0.4997 0.078" size="0.09 0.0006 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <geom name="goal_left_side_bottom" type="box" pos="-4.605 -0.51 0.08" size="0.1 0.01 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_left_side_bottom_inner" type="box" pos="-4.595 -0.4997 0.078" size="0.09 0.0006 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <geom name="goal_left_back" type="box" pos="-4.695 0 0.08" size="0.01 0.52 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_left_back_inner" type="box" pos="-4.6847 0 0.078" size="0.0006 0.5 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <geom name="goal_right_side_top" type="box" pos="4.605 0.51 0.08" size="0.1 0.01 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_right_side_top_inner" type="box" pos="4.595 0.4997 0.078" size="0.09 0.0006 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <geom name="goal_right_side_bottom" type="box" pos="4.605 -0.51 0.08" size="0.1 0.01 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_right_side_bottom_inner" type="box" pos="4.595 -0.4997 0.078" size="0.09 0.0006 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <geom name="goal_right_back" type="box" pos="4.695 0 0.08" size="0.01 0.52 0.08" material="wall" contype="1" conaffinity="3" />
+    <geom name="goal_right_back_inner" type="box" pos="4.6847 0 0.078" size="0.0006 0.5 0.078" material="goal_inner" contype="0" conaffinity="0" />
+    <body name="robot" pos="0 0 0.075">
+      <joint name="robot_x" type="slide" axis="1 0 0" />
+      <joint name="robot_y" type="slide" axis="0 1 0" />
+      <joint name="robot_yaw" type="hinge" axis="0 0 1" />
+      <inertial pos="0 0 0" mass="2.5" diaginertia="0.00975 0.00975 0.010125" />
+      <geom name="robot" type="mesh" mesh="robot_shell" material="robot_shell" friction="0.5 0.005 0.0001" contype="2" conaffinity="2" />
+      <geom name="robot_front_plate" type="box" pos="0.0754 0 0" size="0.0006 0.0457494 0.063" material="robot_front" contype="0" conaffinity="0" />
+      <geom name="robot_front_bar" type="box" pos="0.068 0 0.0755" size="0.006 0.0437494 0.0005" material="robot_front" contype="0" conaffinity="0" />
+      <geom name="robot_marker_team" type="cylinder" pos="0 0 0.0755" size="0.025 0.0005" material="team_blue" contype="0" conaffinity="0" />
+      <geom name="robot_marker_front_left" type="cylinder" pos="0.035 0.0545 0.0755" size="0.02 0.0005" material="marker_pink" contype="0" conaffinity="0" />
+      <geom name="robot_marker_front_right" type="cylinder" pos="0.035 -0.0545 0.0755" size="0.02 0.0005" material="marker_green" contype="0" conaffinity="0" />
+      <geom name="robot_marker_back_left" type="cylinder" pos="-0.0545 0.035 0.0755" size="0.02 0.0005" material="marker_green" contype="0" conaffinity="0" />
+      <geom name="robot_marker_back_right" type="cylinder" pos="-0.0545 -0.035 0.0755" size="0.02 0.0005" material="marker_pink" contype="0" conaffinity="0" />
+      <site name="robot_centre" size="0.005" rgba="0 0 0 0" />
+      <camera name="follow" mode="trackcom" pos="0 -1 0.9" xyaxes="1 0 0 0 0.6981 0.716" fovy="50" />
+    </body>
+    <body name="ball" pos="0.5 0 0.0215">
+      <freejoint name="ball" />
+      <geom name="ball" type="sphere" size="0.0215" mass="0.046" material="ball" condim="6" priority="1" friction="0.35 0.005 0.0012" contype="1" conaffinity="3" />
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="forward" site="robot_centre" gear="1 0 0 0 0 0" kv="50" ctrlrange="-2 2" forcerange="-7.5 7.5" />
+    <velocity name="left" site="robot_centre" gear="0 1 0 0 0 0" kv="50" ctrlrange="-2 2" forcerange="-7.5 7.5" />
+    <velocity name="turn" site="robot_centre" gear="0 0 0 0 0 1" kv="0.2025" ctrlrange="-4 4" forcerange="-0.2025 0.2025" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tools
+.pytest_cache/
+.ruff_cache/
+
+# Training output (the shipped policy lives in models/)
+runs/
+*.monitor.csv
+
+# MuJoCo and OS files
+MUJOCO_LOG.TXT
+.DS_Store

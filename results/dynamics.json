@@ -1,0 +1,22 @@
+{
+  "ball": {
+    "launch_speed_m_s": 2.0,
+    "spin_up_time_s": 0.194,
+    "speed_after_spin_up_m_s": 1.469,
+    "rolling_deceleration_m_s2": 0.364,
+    "slip_while_rolling_fraction_of_speed": 0.127,
+    "distance_to_rest_m": 3.288,
+    "time_to_rest_s": 4.46,
+    "max_rise_while_spinning_up_mm": 0.58,
+    "max_rise_while_rolling_mm": 0.07
+  },
+  "robot": {
+    "top_speed_m_s": 2.0,
+    "mean_acceleration_first_0.2_s_m_s2": 2.88,
+    "mean_acceleration_first_0.2_s_diagonal_m_s2": 4.08,
+    "time_to_95_percent_of_top_speed_s": 0.68,
+    "distance_in_first_second_m": 1.305,
+    "top_yaw_rate_rad_s": 4.0,
+    "time_to_95_percent_of_top_yaw_rate_s": 0.24
+  }
+}

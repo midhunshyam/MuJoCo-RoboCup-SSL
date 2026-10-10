@@ -1,0 +1,46 @@
+{
+  "env_id": "RoboCupSSL/GoToBall-v0",
+  "algorithm": "PPO",
+  "timesteps": 12001280,
+  "n_envs": 8,
+  "seed": 0,
+  "torch_threads": 1,
+  "wall_clock_seconds": 1566.0,
+  "steps_per_second": 7664,
+  "ppo_settings": {
+    "n_steps": 1024,
+    "batch_size": 1024,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "policy_kwargs": {
+      "net_arch": {
+        "pi": [
+          128,
+          128
+        ],
+        "vf": [
+          128,
+          128
+        ]
+      }
+    },
+    "learning_rate": "linear decay from 0.0003 to 0.0"
+  },
+  "model_file": "models/ppo_go_to_ball.zip",
+  "machine": {
+    "system": "Darwin",
+    "architecture": "arm64",
+    "cpu_count": 8
+  },
+  "versions": {
+    "python": "3.9.6",
+    "mujoco": "3.3.7",
+    "gymnasium": "1.1.1",
+    "stable_baselines3": "2.7.1",
+    "torch": "2.8.0",
+    "numpy": "2.0.2"
+  }
+}

@@ -1,0 +1,4067 @@
+{
+ "env_id": "RoboCupSSL/GoToBall-v0",
+ "model": "models/ppo_go_to_ball.zip",
+ "seeds": [
+  1000,
+  1199
+ ],
+ "summary": {
+  "PPO": {
+   "episodes": 200,
+   "successes": 200,
+   "success_rate": 1.0,
+   "success_rate_ci95": [
+    0.9812,
+    1.0
+   ],
+   "time_to_ball_s": {
+    "mean": 2.046,
+    "std": 0.879,
+    "median": 1.94,
+    "p90": 3.206
+   },
+   "mean_return": 12.365,
+   "out_of_field": 0,
+   "timed_out": 0,
+   "episodes_with_wall_contact": 0,
+   "ball_moved_over_5cm": 2
+  },
+  "Scripted baseline": {
+   "episodes": 200,
+   "successes": 200,
+   "success_rate": 1.0,
+   "success_rate_ci95": [
+    0.9812,
+    1.0
+   ],
+   "time_to_ball_s": {
+    "mean": 2.074,
+    "std": 0.88,
+    "median": 1.96,
+    "p90": 3.23
+   },
+   "mean_return": 12.418,
+   "out_of_field": 0,
+   "timed_out": 0,
+   "episodes_with_wall_contact": 0,
+   "ball_moved_over_5cm": 0
+  }
+ },
+ "ppo_minus_baseline_time": {
+  "seeds_solved_by_both": 200,
+  "mean_difference_s": -0.028,
+  "mean_difference_ci95_s": [
+   -0.031,
+   -0.025
+  ],
+  "first_faster_on": 176,
+  "second_faster_on": 6,
+  "ties": 18
+ },
+ "episodes": {
+  "PPO": [
+   {
+    "seed": 1000,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.9372,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0023
+   },
+   {
+    "seed": 1001,
+    "success": true,
+    "time_s": 1.28,
+    "return": 11.4631,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1002,
+    "success": true,
+    "time_s": 1.08,
+    "return": 11.193,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1003,
+    "success": true,
+    "time_s": 2.6,
+    "return": 12.9831,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1004,
+    "success": true,
+    "time_s": 2.3,
+    "return": 12.9408,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1005,
+    "success": true,
+    "time_s": 2.56,
+    "return": 13.0493,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1006,
+    "success": true,
+    "time_s": 0.92,
+    "return": 11.0306,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1007,
+    "success": true,
+    "time_s": 1.04,
+    "return": 11.0489,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1008,
+    "success": true,
+    "time_s": 3.7,
+    "return": 14.6358,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1009,
+    "success": true,
+    "time_s": 1.86,
+    "return": 12.3134,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1010,
+    "success": true,
+    "time_s": 4.04,
+    "return": 15.1385,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1011,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.7153,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1012,
+    "success": true,
+    "time_s": 2.66,
+    "return": 13.1968,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1013,
+    "success": true,
+    "time_s": 2.46,
+    "return": 12.9013,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1014,
+    "success": true,
+    "time_s": 2.58,
+    "return": 13.2156,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1015,
+    "success": true,
+    "time_s": 2.16,
+    "return": 12.7241,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1016,
+    "success": true,
+    "time_s": 1.68,
+    "return": 11.8177,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1017,
+    "success": true,
+    "time_s": 2.64,
+    "return": 13.1374,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1018,
+    "success": true,
+    "time_s": 1.18,
+    "return": 11.3317,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1019,
+    "success": true,
+    "time_s": 2.86,
+    "return": 13.1441,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1020,
+    "success": true,
+    "time_s": 0.98,
+    "return": 11.0269,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1021,
+    "success": true,
+    "time_s": 1.36,
+    "return": 11.1617,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1022,
+    "success": true,
+    "time_s": 3.14,
+    "return": 13.7068,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1023,
+    "success": true,
+    "time_s": 1.96,
+    "return": 12.4045,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1024,
+    "success": true,
+    "time_s": 2.76,
+    "return": 13.3054,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1025,
+    "success": true,
+    "time_s": 2.78,
+    "return": 13.1694,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1026,
+    "success": true,
+    "time_s": 0.78,
+    "return": 10.6157,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1027,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.1475,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1028,
+    "success": true,
+    "time_s": 3.18,
+    "return": 13.8943,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1029,
+    "success": true,
+    "time_s": 3.26,
+    "return": 13.6941,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1030,
+    "success": true,
+    "time_s": 3.18,
+    "return": 13.7383,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1031,
+    "success": true,
+    "time_s": 2.26,
+    "return": 12.7765,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1032,
+    "success": true,
+    "time_s": 1.42,
+    "return": 11.4338,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1033,
+    "success": true,
+    "time_s": 1.42,
+    "return": 11.5282,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1034,
+    "success": true,
+    "time_s": 2.1,
+    "return": 12.4982,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1035,
+    "success": true,
+    "time_s": 2.9,
+    "return": 13.4906,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1036,
+    "success": true,
+    "time_s": 2.0,
+    "return": 12.4185,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1037,
+    "success": true,
+    "time_s": 1.16,
+    "return": 10.9281,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1038,
+    "success": true,
+    "time_s": 1.5,
+    "return": 11.7333,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1039,
+    "success": true,
+    "time_s": 0.98,
+    "return": 11.0244,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1040,
+    "success": true,
+    "time_s": 1.9,
+    "return": 12.3984,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1041,
+    "success": true,
+    "time_s": 2.28,
+    "return": 12.4976,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1042,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.0594,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1043,
+    "success": true,
+    "time_s": 3.14,
+    "return": 13.7132,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1044,
+    "success": true,
+    "time_s": 4.06,
+    "return": 15.2752,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1045,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.1539,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1046,
+    "success": true,
+    "time_s": 2.34,
+    "return": 12.754,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1047,
+    "success": true,
+    "time_s": 1.18,
+    "return": 11.4229,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1048,
+    "success": true,
+    "time_s": 2.92,
+    "return": 13.2739,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1049,
+    "success": true,
+    "time_s": 2.24,
+    "return": 12.673,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1050,
+    "success": true,
+    "time_s": 1.98,
+    "return": 11.9722,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1051,
+    "success": true,
+    "time_s": 3.06,
+    "return": 13.7249,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1052,
+    "success": true,
+    "time_s": 3.16,
+    "return": 13.7899,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1053,
+    "success": true,
+    "time_s": 3.46,
+    "return": 14.1335,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1054,
+    "success": true,
+    "time_s": 3.4,
+    "return": 13.8937,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1055,
+    "success": true,
+    "time_s": 1.9,
+    "return": 12.3968,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1056,
+    "success": true,
+    "time_s": 2.42,
+    "return": 13.0613,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1057,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.3159,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1058,
+    "success": true,
+    "time_s": 3.48,
+    "return": 14.0926,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1059,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.3539,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1060,
+    "success": true,
+    "time_s": 2.54,
+    "return": 12.8178,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1061,
+    "success": true,
+    "time_s": 2.04,
+    "return": 12.3248,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1062,
+    "success": true,
+    "time_s": 2.56,
+    "return": 12.8938,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1063,
+    "success": true,
+    "time_s": 1.18,
+    "return": 10.9617,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1064,
+    "success": true,
+    "time_s": 1.42,
+    "return": 11.233,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1065,
+    "success": true,
+    "time_s": 1.68,
+    "return": 11.7,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1066,
+    "success": true,
+    "time_s": 0.62,
+    "return": 10.4293,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1067,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.2717,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1068,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.1963,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1069,
+    "success": true,
+    "time_s": 3.36,
+    "return": 14.0025,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1070,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.6043,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1071,
+    "success": true,
+    "time_s": 3.54,
+    "return": 14.346,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1072,
+    "success": true,
+    "time_s": 0.78,
+    "return": 10.6878,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1073,
+    "success": true,
+    "time_s": 1.98,
+    "return": 12.261,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1074,
+    "success": true,
+    "time_s": 1.04,
+    "return": 10.8048,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1075,
+    "success": true,
+    "time_s": 3.28,
+    "return": 13.7091,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1076,
+    "success": true,
+    "time_s": 1.68,
+    "return": 11.7829,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1077,
+    "success": true,
+    "time_s": 2.88,
+    "return": 13.6165,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1078,
+    "success": true,
+    "time_s": 2.52,
+    "return": 12.9236,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1079,
+    "success": true,
+    "time_s": 3.02,
+    "return": 13.5402,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1080,
+    "success": true,
+    "time_s": 2.08,
+    "return": 12.6214,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1081,
+    "success": true,
+    "time_s": 1.1,
+    "return": 11.2165,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1082,
+    "success": true,
+    "time_s": 0.7,
+    "return": 10.5669,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1083,
+    "success": true,
+    "time_s": 1.7,
+    "return": 11.5999,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1084,
+    "success": true,
+    "time_s": 3.98,
+    "return": 14.936,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1085,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.9644,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1086,
+    "success": true,
+    "time_s": 1.58,
+    "return": 11.6036,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1087,
+    "success": true,
+    "time_s": 2.46,
+    "return": 13.1531,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1088,
+    "success": true,
+    "time_s": 2.6,
+    "return": 12.8455,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1089,
+    "success": true,
+    "time_s": 0.58,
+    "return": 10.0939,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0526
+   },
+   {
+    "seed": 1090,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.5253,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1091,
+    "success": true,
+    "time_s": 2.04,
+    "return": 12.3525,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1092,
+    "success": true,
+    "time_s": 4.3,
+    "return": 15.2751,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1093,
+    "success": true,
+    "time_s": 1.04,
+    "return": 11.1624,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1094,
+    "success": true,
+    "time_s": 0.98,
+    "return": 10.9262,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1095,
+    "success": true,
+    "time_s": 2.26,
+    "return": 12.8413,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1096,
+    "success": true,
+    "time_s": 1.0,
+    "return": 10.6507,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1097,
+    "success": true,
+    "time_s": 2.28,
+    "return": 12.8021,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1098,
+    "success": true,
+    "time_s": 1.16,
+    "return": 11.1226,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1099,
+    "success": true,
+    "time_s": 2.76,
+    "return": 13.0819,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1100,
+    "success": true,
+    "time_s": 1.04,
+    "return": 11.0587,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1101,
+    "success": true,
+    "time_s": 1.32,
+    "return": 11.1588,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1102,
+    "success": true,
+    "time_s": 1.68,
+    "return": 11.6693,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1103,
+    "success": true,
+    "time_s": 0.6,
+    "return": 10.4706,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1104,
+    "success": true,
+    "time_s": 3.32,
+    "return": 13.8469,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1105,
+    "success": true,
+    "time_s": 1.42,
+    "return": 11.7626,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1106,
+    "success": true,
+    "time_s": 2.04,
+    "return": 12.1967,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1107,
+    "success": true,
+    "time_s": 1.28,
+    "return": 11.4873,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1108,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.4198,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1109,
+    "success": true,
+    "time_s": 1.58,
+    "return": 11.9695,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1110,
+    "success": true,
+    "time_s": 2.3,
+    "return": 12.9371,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1111,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.2708,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1112,
+    "success": true,
+    "time_s": 0.7,
+    "return": 10.7101,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1113,
+    "success": true,
+    "time_s": 1.9,
+    "return": 11.8811,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1114,
+    "success": true,
+    "time_s": 2.84,
+    "return": 13.1135,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1115,
+    "success": true,
+    "time_s": 1.16,
+    "return": 11.3379,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1116,
+    "success": true,
+    "time_s": 0.64,
+    "return": 10.4706,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1117,
+    "success": true,
+    "time_s": 1.78,
+    "return": 11.9961,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1118,
+    "success": true,
+    "time_s": 2.72,
+    "return": 13.1999,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1119,
+    "success": true,
+    "time_s": 2.86,
+    "return": 13.2726,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1120,
+    "success": true,
+    "time_s": 2.5,
+    "return": 12.8986,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1121,
+    "success": true,
+    "time_s": 1.6,
+    "return": 12.013,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1122,
+    "success": true,
+    "time_s": 4.16,
+    "return": 15.1794,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1123,
+    "success": true,
+    "time_s": 0.68,
+    "return": 10.5403,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1124,
+    "success": true,
+    "time_s": 1.64,
+    "return": 12.0098,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1125,
+    "success": true,
+    "time_s": 0.84,
+    "return": 10.963,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1126,
+    "success": true,
+    "time_s": 2.44,
+    "return": 12.7967,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1127,
+    "success": true,
+    "time_s": 1.36,
+    "return": 11.2334,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1128,
+    "success": true,
+    "time_s": 4.0,
+    "return": 14.8725,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1129,
+    "success": true,
+    "time_s": 1.84,
+    "return": 11.8042,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1130,
+    "success": true,
+    "time_s": 2.24,
+    "return": 12.5229,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1131,
+    "success": true,
+    "time_s": 3.06,
+    "return": 13.8817,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1132,
+    "success": true,
+    "time_s": 4.08,
+    "return": 14.9747,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1133,
+    "success": true,
+    "time_s": 2.64,
+    "return": 13.3931,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1134,
+    "success": true,
+    "time_s": 1.86,
+    "return": 12.1568,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1135,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.493,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1136,
+    "success": true,
+    "time_s": 1.3,
+    "return": 11.2473,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1137,
+    "success": true,
+    "time_s": 2.64,
+    "return": 13.1313,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1138,
+    "success": true,
+    "time_s": 2.02,
+    "return": 12.3052,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1139,
+    "success": true,
+    "time_s": 3.08,
+    "return": 13.5194,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1140,
+    "success": true,
+    "time_s": 1.54,
+    "return": 11.926,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1141,
+    "success": true,
+    "time_s": 2.98,
+    "return": 13.7413,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1142,
+    "success": true,
+    "time_s": 2.88,
+    "return": 13.5515,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1143,
+    "success": true,
+    "time_s": 2.86,
+    "return": 13.2496,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1144,
+    "success": true,
+    "time_s": 0.96,
+    "return": 11.1386,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1145,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.1425,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1146,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.9438,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1147,
+    "success": true,
+    "time_s": 1.7,
+    "return": 12.1081,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1148,
+    "success": true,
+    "time_s": 1.54,
+    "return": 11.4134,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1149,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.3714,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0008
+   },
+   {
+    "seed": 1150,
+    "success": true,
+    "time_s": 1.04,
+    "return": 11.1868,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1151,
+    "success": true,
+    "time_s": 2.82,
+    "return": 13.4111,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1152,
+    "success": true,
+    "time_s": 1.3,
+    "return": 11.5604,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1153,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.6402,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1154,
+    "success": true,
+    "time_s": 2.78,
+    "return": 13.5758,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1155,
+    "success": true,
+    "time_s": 3.3,
+    "return": 13.7534,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1156,
+    "success": true,
+    "time_s": 3.2,
+    "return": 13.8517,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1157,
+    "success": true,
+    "time_s": 1.86,
+    "return": 12.3042,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1158,
+    "success": true,
+    "time_s": 0.72,
+    "return": 10.7179,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1159,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.5252,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1160,
+    "success": true,
+    "time_s": 2.32,
+    "return": 12.8221,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1161,
+    "success": true,
+    "time_s": 2.02,
+    "return": 12.3362,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1162,
+    "success": true,
+    "time_s": 2.6,
+    "return": 13.3379,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1163,
+    "success": true,
+    "time_s": 1.34,
+    "return": 11.4632,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1164,
+    "success": true,
+    "time_s": 2.48,
+    "return": 12.9206,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1165,
+    "success": true,
+    "time_s": 2.68,
+    "return": 13.1543,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1166,
+    "success": true,
+    "time_s": 2.04,
+    "return": 12.5937,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1167,
+    "success": true,
+    "time_s": 2.18,
+    "return": 12.7424,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1168,
+    "success": true,
+    "time_s": 1.08,
+    "return": 10.531,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.6867
+   },
+   {
+    "seed": 1169,
+    "success": true,
+    "time_s": 1.64,
+    "return": 12.0136,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1170,
+    "success": true,
+    "time_s": 1.58,
+    "return": 11.7501,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1171,
+    "success": true,
+    "time_s": 0.88,
+    "return": 10.9748,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1172,
+    "success": true,
+    "time_s": 3.92,
+    "return": 14.9968,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1173,
+    "success": true,
+    "time_s": 2.74,
+    "return": 13.4037,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1174,
+    "success": true,
+    "time_s": 1.36,
+    "return": 11.4487,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1175,
+    "success": true,
+    "time_s": 2.1,
+    "return": 12.5845,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1176,
+    "success": true,
+    "time_s": 3.56,
+    "return": 14.3764,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1177,
+    "success": true,
+    "time_s": 1.08,
+    "return": 10.9479,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1178,
+    "success": true,
+    "time_s": 1.86,
+    "return": 12.1845,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1179,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.2894,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1180,
+    "success": true,
+    "time_s": 1.78,
+    "return": 11.8375,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1181,
+    "success": true,
+    "time_s": 1.4,
+    "return": 11.6096,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1182,
+    "success": true,
+    "time_s": 0.86,
+    "return": 10.9059,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1183,
+    "success": true,
+    "time_s": 1.64,
+    "return": 11.6962,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1184,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.8347,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1185,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.1891,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1186,
+    "success": true,
+    "time_s": 3.68,
+    "return": 14.3105,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1187,
+    "success": true,
+    "time_s": 1.6,
+    "return": 12.0058,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1188,
+    "success": true,
+    "time_s": 3.1,
+    "return": 13.903,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1189,
+    "success": true,
+    "time_s": 2.1,
+    "return": 12.386,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1190,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.3358,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0024
+   },
+   {
+    "seed": 1191,
+    "success": true,
+    "time_s": 1.58,
+    "return": 11.9457,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1192,
+    "success": true,
+    "time_s": 3.14,
+    "return": 14.0269,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1193,
+    "success": true,
+    "time_s": 0.92,
+    "return": 10.7042,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1194,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.5346,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1195,
+    "success": true,
+    "time_s": 1.44,
+    "return": 11.7559,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1196,
+    "success": true,
+    "time_s": 2.98,
+    "return": 13.6016,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1197,
+    "success": true,
+    "time_s": 2.64,
+    "return": 13.3539,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1198,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.393,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0009
+   },
+   {
+    "seed": 1199,
+    "success": true,
+    "time_s": 0.62,
+    "return": 10.4012,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   }
+  ],
+  "Scripted baseline": [
+   {
+    "seed": 1000,
+    "success": true,
+    "time_s": 1.58,
+    "return": 12.0204,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1001,
+    "success": true,
+    "time_s": 1.28,
+    "return": 11.4893,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1002,
+    "success": true,
+    "time_s": 1.1,
+    "return": 11.248,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1003,
+    "success": true,
+    "time_s": 2.66,
+    "return": 13.0275,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1004,
+    "success": true,
+    "time_s": 2.32,
+    "return": 13.0073,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1005,
+    "success": true,
+    "time_s": 2.58,
+    "return": 13.0763,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1006,
+    "success": true,
+    "time_s": 0.92,
+    "return": 11.1075,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1007,
+    "success": true,
+    "time_s": 1.06,
+    "return": 11.0971,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1008,
+    "success": true,
+    "time_s": 3.72,
+    "return": 14.6796,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1009,
+    "success": true,
+    "time_s": 1.88,
+    "return": 12.3746,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1010,
+    "success": true,
+    "time_s": 4.06,
+    "return": 15.2592,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1011,
+    "success": true,
+    "time_s": 1.8,
+    "return": 11.788,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1012,
+    "success": true,
+    "time_s": 2.68,
+    "return": 13.2217,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1013,
+    "success": true,
+    "time_s": 2.48,
+    "return": 12.9365,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1014,
+    "success": true,
+    "time_s": 2.58,
+    "return": 13.3252,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1015,
+    "success": true,
+    "time_s": 2.18,
+    "return": 12.8081,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1016,
+    "success": true,
+    "time_s": 1.72,
+    "return": 11.8507,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1017,
+    "success": true,
+    "time_s": 2.66,
+    "return": 13.1739,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1018,
+    "success": true,
+    "time_s": 1.2,
+    "return": 11.3779,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1019,
+    "success": true,
+    "time_s": 2.94,
+    "return": 13.1989,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1020,
+    "success": true,
+    "time_s": 1.0,
+    "return": 11.0525,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1021,
+    "success": true,
+    "time_s": 1.44,
+    "return": 11.241,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1022,
+    "success": true,
+    "time_s": 3.16,
+    "return": 13.7921,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1023,
+    "success": true,
+    "time_s": 1.96,
+    "return": 12.5162,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1024,
+    "success": true,
+    "time_s": 2.8,
+    "return": 13.3643,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1025,
+    "success": true,
+    "time_s": 2.82,
+    "return": 13.2426,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1026,
+    "success": true,
+    "time_s": 0.8,
+    "return": 10.6805,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1027,
+    "success": true,
+    "time_s": 1.16,
+    "return": 11.1834,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1028,
+    "success": true,
+    "time_s": 3.2,
+    "return": 13.915,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1029,
+    "success": true,
+    "time_s": 3.32,
+    "return": 13.7297,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1030,
+    "success": true,
+    "time_s": 3.2,
+    "return": 13.8338,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1031,
+    "success": true,
+    "time_s": 2.26,
+    "return": 12.9052,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1032,
+    "success": true,
+    "time_s": 1.44,
+    "return": 11.4985,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1033,
+    "success": true,
+    "time_s": 1.44,
+    "return": 11.5619,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1034,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.5503,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1035,
+    "success": true,
+    "time_s": 2.9,
+    "return": 13.5308,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1036,
+    "success": true,
+    "time_s": 2.02,
+    "return": 12.4924,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1037,
+    "success": true,
+    "time_s": 1.22,
+    "return": 10.9688,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1038,
+    "success": true,
+    "time_s": 1.5,
+    "return": 11.7646,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1039,
+    "success": true,
+    "time_s": 1.0,
+    "return": 11.0468,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1040,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.4695,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1041,
+    "success": true,
+    "time_s": 2.34,
+    "return": 12.5148,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1042,
+    "success": true,
+    "time_s": 1.96,
+    "return": 12.143,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1043,
+    "success": true,
+    "time_s": 3.18,
+    "return": 13.7418,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1044,
+    "success": true,
+    "time_s": 4.08,
+    "return": 15.355,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1045,
+    "success": true,
+    "time_s": 1.96,
+    "return": 12.1994,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1046,
+    "success": true,
+    "time_s": 2.36,
+    "return": 12.8073,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1047,
+    "success": true,
+    "time_s": 1.2,
+    "return": 11.4824,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1048,
+    "success": true,
+    "time_s": 2.98,
+    "return": 13.3328,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1049,
+    "success": true,
+    "time_s": 2.26,
+    "return": 12.7353,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1050,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.0295,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1051,
+    "success": true,
+    "time_s": 3.08,
+    "return": 13.7825,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1052,
+    "success": true,
+    "time_s": 3.18,
+    "return": 13.813,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1053,
+    "success": true,
+    "time_s": 3.5,
+    "return": 14.1627,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1054,
+    "success": true,
+    "time_s": 3.46,
+    "return": 13.959,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1055,
+    "success": true,
+    "time_s": 1.92,
+    "return": 12.4679,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1056,
+    "success": true,
+    "time_s": 2.44,
+    "return": 13.1237,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1057,
+    "success": true,
+    "time_s": 1.26,
+    "return": 11.3555,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1058,
+    "success": true,
+    "time_s": 3.54,
+    "return": 14.1356,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1059,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.4193,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1060,
+    "success": true,
+    "time_s": 2.6,
+    "return": 12.8328,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1061,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.3904,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1062,
+    "success": true,
+    "time_s": 2.62,
+    "return": 12.9225,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1063,
+    "success": true,
+    "time_s": 1.24,
+    "return": 11.0337,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1064,
+    "success": true,
+    "time_s": 1.5,
+    "return": 11.2989,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1065,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.7263,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1066,
+    "success": true,
+    "time_s": 0.66,
+    "return": 10.4763,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1067,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.3067,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1068,
+    "success": true,
+    "time_s": 2.18,
+    "return": 12.246,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1069,
+    "success": true,
+    "time_s": 3.38,
+    "return": 14.077,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1070,
+    "success": true,
+    "time_s": 2.14,
+    "return": 12.6337,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1071,
+    "success": true,
+    "time_s": 3.56,
+    "return": 14.3837,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1072,
+    "success": true,
+    "time_s": 0.8,
+    "return": 10.7009,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1073,
+    "success": true,
+    "time_s": 2.0,
+    "return": 12.3079,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1074,
+    "success": true,
+    "time_s": 1.08,
+    "return": 10.8675,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1075,
+    "success": true,
+    "time_s": 3.36,
+    "return": 13.7709,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1076,
+    "success": true,
+    "time_s": 1.7,
+    "return": 11.8613,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1077,
+    "success": true,
+    "time_s": 2.86,
+    "return": 13.7161,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1078,
+    "success": true,
+    "time_s": 2.54,
+    "return": 12.999,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1079,
+    "success": true,
+    "time_s": 3.08,
+    "return": 13.5774,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1080,
+    "success": true,
+    "time_s": 2.08,
+    "return": 12.6583,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1081,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.2662,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1082,
+    "success": true,
+    "time_s": 0.74,
+    "return": 10.5449,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1083,
+    "success": true,
+    "time_s": 1.76,
+    "return": 11.644,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1084,
+    "success": true,
+    "time_s": 4.0,
+    "return": 14.9803,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1085,
+    "success": true,
+    "time_s": 1.76,
+    "return": 11.9894,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1086,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.6629,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1087,
+    "success": true,
+    "time_s": 2.48,
+    "return": 13.2154,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1088,
+    "success": true,
+    "time_s": 2.66,
+    "return": 12.9128,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1089,
+    "success": true,
+    "time_s": 0.62,
+    "return": 10.1875,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1090,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.533,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1091,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.3915,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1092,
+    "success": true,
+    "time_s": 4.32,
+    "return": 15.3255,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1093,
+    "success": true,
+    "time_s": 1.06,
+    "return": 11.2005,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1094,
+    "success": true,
+    "time_s": 0.98,
+    "return": 10.9493,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1095,
+    "success": true,
+    "time_s": 2.28,
+    "return": 12.9034,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1096,
+    "success": true,
+    "time_s": 1.04,
+    "return": 10.6957,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1097,
+    "success": true,
+    "time_s": 2.3,
+    "return": 12.8704,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1098,
+    "success": true,
+    "time_s": 1.18,
+    "return": 11.1852,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1099,
+    "success": true,
+    "time_s": 2.8,
+    "return": 13.1333,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1100,
+    "success": true,
+    "time_s": 1.06,
+    "return": 11.0875,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1101,
+    "success": true,
+    "time_s": 1.38,
+    "return": 11.2549,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1102,
+    "success": true,
+    "time_s": 1.74,
+    "return": 11.6971,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1103,
+    "success": true,
+    "time_s": 0.68,
+    "return": 10.4492,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1104,
+    "success": true,
+    "time_s": 3.36,
+    "return": 13.9383,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1105,
+    "success": true,
+    "time_s": 1.44,
+    "return": 11.8217,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1106,
+    "success": true,
+    "time_s": 2.08,
+    "return": 12.2706,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1107,
+    "success": true,
+    "time_s": 1.3,
+    "return": 11.5308,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1108,
+    "success": true,
+    "time_s": 1.26,
+    "return": 11.4418,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1109,
+    "success": true,
+    "time_s": 1.6,
+    "return": 12.0349,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1110,
+    "success": true,
+    "time_s": 2.32,
+    "return": 13.0038,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1111,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.3893,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1112,
+    "success": true,
+    "time_s": 0.76,
+    "return": 10.748,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1113,
+    "success": true,
+    "time_s": 1.96,
+    "return": 11.9152,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1114,
+    "success": true,
+    "time_s": 2.92,
+    "return": 13.1718,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1115,
+    "success": true,
+    "time_s": 1.18,
+    "return": 11.3894,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1116,
+    "success": true,
+    "time_s": 0.68,
+    "return": 10.4468,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1117,
+    "success": true,
+    "time_s": 1.8,
+    "return": 12.0468,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1118,
+    "success": true,
+    "time_s": 2.76,
+    "return": 13.2324,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1119,
+    "success": true,
+    "time_s": 2.92,
+    "return": 13.3006,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1120,
+    "success": true,
+    "time_s": 2.52,
+    "return": 12.9799,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1121,
+    "success": true,
+    "time_s": 1.62,
+    "return": 12.0731,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1122,
+    "success": true,
+    "time_s": 4.18,
+    "return": 15.2181,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1123,
+    "success": true,
+    "time_s": 0.74,
+    "return": 10.5431,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1124,
+    "success": true,
+    "time_s": 1.66,
+    "return": 12.0623,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1125,
+    "success": true,
+    "time_s": 0.92,
+    "return": 10.945,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1126,
+    "success": true,
+    "time_s": 2.46,
+    "return": 12.8736,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1127,
+    "success": true,
+    "time_s": 1.4,
+    "return": 11.2905,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1128,
+    "success": true,
+    "time_s": 4.02,
+    "return": 14.9811,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1129,
+    "success": true,
+    "time_s": 1.88,
+    "return": 11.8152,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1130,
+    "success": true,
+    "time_s": 2.26,
+    "return": 12.5944,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1131,
+    "success": true,
+    "time_s": 3.06,
+    "return": 13.9257,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1132,
+    "success": true,
+    "time_s": 4.12,
+    "return": 15.0311,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1133,
+    "success": true,
+    "time_s": 2.66,
+    "return": 13.4585,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1134,
+    "success": true,
+    "time_s": 1.88,
+    "return": 12.2054,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1135,
+    "success": true,
+    "time_s": 1.26,
+    "return": 11.5494,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1136,
+    "success": true,
+    "time_s": 1.34,
+    "return": 11.2664,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1137,
+    "success": true,
+    "time_s": 2.66,
+    "return": 13.1911,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1138,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.3697,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1139,
+    "success": true,
+    "time_s": 3.12,
+    "return": 13.5842,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1140,
+    "success": true,
+    "time_s": 1.56,
+    "return": 11.987,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1141,
+    "success": true,
+    "time_s": 2.96,
+    "return": 13.8398,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1142,
+    "success": true,
+    "time_s": 2.9,
+    "return": 13.6024,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1143,
+    "success": true,
+    "time_s": 2.9,
+    "return": 13.3182,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1144,
+    "success": true,
+    "time_s": 0.98,
+    "return": 11.2057,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1145,
+    "success": true,
+    "time_s": 1.96,
+    "return": 12.1831,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1146,
+    "success": true,
+    "time_s": 1.76,
+    "return": 11.9889,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1147,
+    "success": true,
+    "time_s": 1.72,
+    "return": 12.1657,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1148,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.4649,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1149,
+    "success": true,
+    "time_s": 1.9,
+    "return": 12.4471,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1150,
+    "success": true,
+    "time_s": 1.06,
+    "return": 11.2213,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1151,
+    "success": true,
+    "time_s": 2.84,
+    "return": 13.4317,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1152,
+    "success": true,
+    "time_s": 1.32,
+    "return": 11.6111,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1153,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.739,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1154,
+    "success": true,
+    "time_s": 2.8,
+    "return": 13.646,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1155,
+    "success": true,
+    "time_s": 3.36,
+    "return": 13.7982,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1156,
+    "success": true,
+    "time_s": 3.22,
+    "return": 13.8753,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1157,
+    "success": true,
+    "time_s": 1.88,
+    "return": 12.3534,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1158,
+    "success": true,
+    "time_s": 0.76,
+    "return": 10.7404,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1159,
+    "success": true,
+    "time_s": 1.26,
+    "return": 11.5889,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1160,
+    "success": true,
+    "time_s": 2.34,
+    "return": 12.9008,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1161,
+    "success": true,
+    "time_s": 2.04,
+    "return": 12.3689,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1162,
+    "success": true,
+    "time_s": 2.62,
+    "return": 13.3948,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1163,
+    "success": true,
+    "time_s": 1.36,
+    "return": 11.511,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1164,
+    "success": true,
+    "time_s": 2.5,
+    "return": 12.9582,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1165,
+    "success": true,
+    "time_s": 2.72,
+    "return": 13.1858,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1166,
+    "success": true,
+    "time_s": 2.06,
+    "return": 12.6593,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1167,
+    "success": true,
+    "time_s": 2.18,
+    "return": 12.8215,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1168,
+    "success": true,
+    "time_s": 1.02,
+    "return": 10.7296,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1169,
+    "success": true,
+    "time_s": 1.62,
+    "return": 12.0743,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1170,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.7744,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1171,
+    "success": true,
+    "time_s": 0.9,
+    "return": 11.014,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1172,
+    "success": true,
+    "time_s": 3.94,
+    "return": 15.0909,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1173,
+    "success": true,
+    "time_s": 2.74,
+    "return": 13.5288,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1174,
+    "success": true,
+    "time_s": 1.38,
+    "return": 11.4921,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1175,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.6321,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1176,
+    "success": true,
+    "time_s": 3.58,
+    "return": 14.4467,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1177,
+    "success": true,
+    "time_s": 1.12,
+    "return": 11.0358,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1178,
+    "success": true,
+    "time_s": 1.88,
+    "return": 12.2473,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1179,
+    "success": true,
+    "time_s": 1.26,
+    "return": 11.3222,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1180,
+    "success": true,
+    "time_s": 1.82,
+    "return": 11.9078,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1181,
+    "success": true,
+    "time_s": 1.42,
+    "return": 11.6317,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1182,
+    "success": true,
+    "time_s": 0.88,
+    "return": 10.945,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1183,
+    "success": true,
+    "time_s": 1.7,
+    "return": 11.742,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1184,
+    "success": true,
+    "time_s": 1.78,
+    "return": 11.8485,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1185,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.2242,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1186,
+    "success": true,
+    "time_s": 3.74,
+    "return": 14.3494,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1187,
+    "success": true,
+    "time_s": 1.62,
+    "return": 12.0725,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1188,
+    "success": true,
+    "time_s": 3.1,
+    "return": 13.9182,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1189,
+    "success": true,
+    "time_s": 2.12,
+    "return": 12.453,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1190,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.4068,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1191,
+    "success": true,
+    "time_s": 1.6,
+    "return": 11.9941,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1192,
+    "success": true,
+    "time_s": 3.16,
+    "return": 14.0856,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1193,
+    "success": true,
+    "time_s": 0.96,
+    "return": 10.7867,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1194,
+    "success": true,
+    "time_s": 1.66,
+    "return": 11.6114,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1195,
+    "success": true,
+    "time_s": 1.46,
+    "return": 11.8208,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1196,
+    "success": true,
+    "time_s": 3.0,
+    "return": 13.6421,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1197,
+    "success": true,
+    "time_s": 2.64,
+    "return": 13.4299,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1198,
+    "success": true,
+    "time_s": 1.14,
+    "return": 11.4321,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   },
+   {
+    "seed": 1199,
+    "success": true,
+    "time_s": 0.66,
+    "return": 10.4392,
+    "out_of_field": false,
+    "timed_out": false,
+    "wall_contact_steps": 0,
+    "ball_displacement_m": 0.0
+   }
+  ]
+ }
+}
