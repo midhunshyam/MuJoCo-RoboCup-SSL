@@ -192,7 +192,7 @@ obs, reward, terminated, truncated, info = env.step(env.action_space.sample())
 |---|---|---|
 | Watch the trained policy | `python scripts/demo.py` | On macOS the passive viewer needs `mjpython scripts/demo.py` (installed with MuJoCo). Add `--baseline` for the scripted controller. |
 | Evaluate | `python scripts/evaluate.py` | 200 episodes per controller, about 9 s; writes `results/eval.json` and `results/eval.md` |
-| Train | `python scripts/train.py` | 12M steps; 26 minutes on an 8-core Apple M1. `--timesteps 300000` gives a quick check. |
+| Train | `python scripts/train.py` | 12M steps, 26 minutes on an 8-core Apple M1; replaces `models/ppo_go_to_ball.zip` and `results/training_run.json`. For a quick check that leaves them alone: `python scripts/train.py --timesteps 300000 --model-out runs/quick.zip --summary-out runs/quick.json` |
 | Plot training | `python scripts/plot_training.py` | Reads the Monitor files in `runs/ppo_go_to_ball/monitor` |
 | Render the GIF and still | `python scripts/render_media.py` | Offscreen; on a headless Linux machine set `MUJOCO_GL=egl` |
 | Measure the dynamics | `python scripts/measure_dynamics.py` | Writes `results/dynamics.json` |

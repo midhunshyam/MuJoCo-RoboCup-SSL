@@ -44,7 +44,7 @@ PPO_SETTINGS = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--timesteps", type=int, default=8_000_000)
+    parser.add_argument("--timesteps", type=int, default=12_000_000)
     parser.add_argument("--n-envs", type=int, default=8)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--torch-threads", type=int, default=1)
